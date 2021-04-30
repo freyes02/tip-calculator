@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Tip Calculator</h1>
+        </header>
+        <section>
+            <form id="tip">
+                <label for="check">Enter Check Amount:</label><br>
+                <input type="number" id="check" name="check"><br>
+
+                <label for="tipper">Enter Tip Percent</label><br>
+                <input type="number" id="tipper" name="tipper" min="0" max="100"><br>
+
+                <label for="split">Split Between People</label><br>
+                <input type="number" id="split" name="split" min="1" max="10" value="1"><br>
+
+
+                <div class="total">
+                <label for="tipamount">Tip Amount</label><br>
+                <input type="number" id="tipamount" name="tipamount" disabled><br>
+
+                <label for="total">Total Amount</label><br>
+                <input type="number" id="total" name="total" disabled><br>
+
+                <label for="totals">Total Amount With Split</label><br>
+                <input type="number" id="totals" name="totals" disabled><br>
+            </div>
+            </form>
+        </section>
+        <footer>
+            &copy; Freddy Reyes
+        </footer>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
